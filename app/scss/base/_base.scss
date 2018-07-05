@@ -3,9 +3,10 @@
 *:after{
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	box-sizing: inherit;
 }
 html{
+	box-sizing: border-box;
 	font-size: 62.5%;
 }
 body{
@@ -16,7 +17,10 @@ body{
 	font-size: $font-size-main;
 	line-height: $line-height-main;
 	text-decoration: none;
-	box-sizing: border-box;
+	background-image: linear-gradient(to right bottom, $color-red-light, $color-red-dark);
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
 }
 h1,h2,h3,h4,h5,h6{
 	text-transform: capitalize;
@@ -27,7 +31,6 @@ a:link{
 	outline: none;
 	text-transform: capitalize;
 }
-
 a:hover{
 	text-decoration: none;
 }
