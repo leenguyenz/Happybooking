@@ -1,0 +1,44 @@
+header{
+    background: $color-white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    .logo-brand{
+        height: 3.5rem;
+        img{
+            height: 100%;
+        }
+    }
+    .search{
+        position: relative;
+        button{
+            position: absolute;
+            top: 50%;
+            right: 1rem;
+            border: none;
+            transform: translateY(-50%);
+            background: $color-grey-light-2;
+            i{
+                font-size: 1.6rem;
+                color: $color-grey-dark-2;
+            }
+        }
+    }
+    .notify{
+        display: flex;
+        &__avatar{
+            height: 3rem;
+            position: relative;
+            padding-left: 3.5rem;
+            img{
+                height: 100%;
+                border-radius: 50%;
+                position: absolute;
+                left: 0;
+                top: -5px;
+            }
+        }
+    }
+}

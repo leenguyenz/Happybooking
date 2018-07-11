@@ -17,10 +17,11 @@ body{
 	font-size: $font-size-main;
 	line-height: $line-height-main;
 	text-decoration: none;
-	// background-image: linear-gradient(to right bottom, $color-red-light, $color-red-dark);
-	// background-size: cover;
-	// background-repeat: no-repeat;
-	// min-height: 100vh;
+	background-image: linear-gradient(to right bottom, #ddd, #888);
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	padding: 5rem 10rem;
 }
 h1,h2,h3,h4,h5,h6{
 	text-transform: capitalize;
