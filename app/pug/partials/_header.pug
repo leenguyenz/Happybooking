@@ -8,10 +8,12 @@ header
             button(type="submit")
                 i.fa.fa-search
     .notify
-        .notify__bookmark
-            i.fa.fa-bookmark
-        .notify__chat
-            i.fa.fa-comments
-        .notify__avatar
-            img(src="../../images/user.jpg", alt="Lee")
-            .notify__avartar__name Jonas
+        ul
+            li.notify__bookmark
+                i.fa.fa-bookmark
+            li.notify__chat
+                i.fa.fa-comments
+            li.notify__avatar
+                .notify__avatar__block
+                    img(src="../../images/user.jpg", alt="Lee")
+                    | Jonas
