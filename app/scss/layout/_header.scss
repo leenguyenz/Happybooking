@@ -34,25 +34,19 @@ header{
                 display: inline-block;
                 position: relative;
                 cursor: pointer;
-                i {
-                    font-size: 2rem;
+                &.notify__bookmark:after{
+                    @include notify_amount;
+                    content: '7';
                 }
-                &:not(:last-child){
-                    &:after{
-                        content: '7';
-                        width: 15px;
-                        height: 15px;
-                        background: #eb2f64;
-                        -webkit-border-radius: 50%;
-                        border-radius: 50%;
-                        position: absolute;
-                        top: 2rem;
-                        right: 1rem;
-                        color: $color-white;
-                        text-align: center;
-                        line-height: 15px;
-                        font-size: 1rem;
-                    }
+                &.notify__chat:after{
+                    @include notify_amount;
+                    content: '10';
+                }
+                & > i {
+                    font-size: 2.2rem;
+                }
+                &:hover{
+                    background: $color-grey-light-4;
                 }
             }
         }
