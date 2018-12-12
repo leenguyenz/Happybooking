@@ -73,9 +73,13 @@
     flex-direction: row;
 }
 .navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 20%;
     height: 100vh;
     background:$color-grey-dark-1;
+    padding-top: 35px;
     &__nav{
         list-style: none;
     }
@@ -85,6 +89,7 @@
         text-transform: uppercase;
         margin-bottom: 3px;
         transition: all 300ms ease;
+        cursor: pointer;
         &.active{
             background: $color-red-medium;
         }
@@ -96,9 +101,171 @@
             font-size: 1.7rem;
         }
     }
+    p{
+        padding: 40px 20px;
+        text-align: center;
+        font-size: 1.2rem;
+        color: $color-white;
+    }
 }
 .content{
     width: 80%;
     height: 100vh;
     background: $color-grey-light-1;
+    &__image{
+        img{
+            width: 33.33%;
+        }
+    }
+    &__rate{
+        display: flex;
+        justify-content: space-between;
+        background: $color-white;
+        border-bottom: 1px solid $color-grey-light-2;
+    }
+    &__star{
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        &--titles{
+            font-size: 2.4rem;
+            padding-right: 20px;
+            font-weight: 300;
+        }
+        &--icon{
+            color: $color-red-medium;
+            i{
+                padding: 0 2px;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    &__vote{
+        display: flex;
+        align-items: center;
+        &--score{
+            background: $color-red-medium;
+            padding: 5px 25px;
+            color: $color-grey-light-1;
+            text-align: center;
+        }
+        &--point{font-size: 2.3rem;}
+        &--users{font-size: 1.1rem;}
+    }
+    &__show{
+        text-align: center;
+        color: $color-red-medium;
+        padding-right: 30px;
+        i{padding:0 10px;}
+        a{
+            color: $color-red-medium;
+            padding-bottom: 2px;
+            border-bottom: 1px solid $color-red-medium;
+        }
+    }
+    &__review{
+        padding: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left{
+        width: 63%;
+        background: $color-white;
+        padding: 30px;
+    }
+    &__right{
+        width: 35%;
+        margin-bottom: 20px;
+    }
+    &__intro{
+        p{
+            padding-bottom: 20px;
+        }
+    }
+    &__topic{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        border-top: 1px solid $color-grey-light-3;
+        border-bottom: 1px solid $color-grey-light-3;
+        ul{
+            list-style: none;
+            li{
+                i{color: $color-red-medium;padding-right: 10px}
+            }
+        }
+    }
+    &__recommend{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        &--image{
+            img{
+                border-radius: 50%;
+                width: 40px;
+                border: 2px solid $color-white;
+                &:nth-child(2),&:nth-child(3),&:last-child{
+                    margin-left: -10px;
+                }
+            }
+        }
+    }
+    &__quote{
+        padding: 20px;
+        position: relative;
+        margin-bottom: 20px;
+        background: $color-white;
+        i{
+            font-size: 50px;
+            color: $color-grey-light-2;
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            z-index: 0;
+        }
+        &__content{
+            padding-bottom: 10px;
+            z-index: 99;
+        }
+        &__author{
+            display: flex;
+            justify-content: space-between;
+            img{
+                width: 50px;
+                border-radius: 50%;
+                position: absolute;
+            }
+        }
+        &__title{
+            padding-left: 60px;
+            text-align: center;
+        }
+        &__date{
+            font-size: 1.2rem;
+        }
+        &__score{
+            font-size: 2rem;
+            font-weight: 300;
+            color: $color-red-medium;
+        }
+    }
+    .bottom{
+        background: $color-white;
+        border-top: 1px solid $color-grey-light-2;
+        text-align: center;
+        padding: 20px 0;
+        p{
+            font-size: 2rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        &__button{
+            display: inline-block;
+            padding: 12px 50px;
+            background: red;
+            color:$color-white;
+            border-radius: 999px;
+            font-size: 2rem;
+        }
+    }
 }
