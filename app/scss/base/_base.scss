@@ -1,3 +1,7 @@
+* {
+	margin: 0;
+	padding:0;
+}
 *,
 *:before,
 *:after{
@@ -20,8 +24,6 @@ body{
 	background-image: linear-gradient(to right bottom,$color-grey-light-4, $color-grey-dark-2);
 	background-size: cover;
 	background-repeat: no-repeat;
-	min-height: 100vh;
-	padding: 5rem 20rem;
 }
 h1,h2,h3,h4,h5,h6{
 	text-transform: capitalize;

@@ -1,5 +1,5 @@
-main#main-content
-    article.header
+main.container
+    header.header
         .logo-brand
             a(href="")
                 img(src="../../images/logo.png", alt="Happybooking Logo")
@@ -18,56 +18,56 @@ main#main-content
                     .notify__avatar__block
                         img(src="../../images/user.jpg", alt="Lee")
                         | Jonas
-    article#content
-        aside.navigation
-            ul.navigation__nav
-                li.navigation__item.active
-                    a.navigation__link(ahref="#")
+    .content
+        aside.sidebar
+            ul.sidebar__nav
+                li.sidebar__item.active
+                    a.sidebar__link(ahref="#")
                         i.fa.fa-home
                         | Hotel
-                li.navigation__item
-                    a.navigation__link(ahref="#")
+                li.sidebar__item
+                    a.sidebar__link(ahref="#")
                         i.fa.fa-plane
                         | Flight
-                li.navigation__item
-                    a.navigation__link(ahref="#")
+                li.sidebar__item
+                    a.sidebar__link(ahref="#")
                         i.fa.fa-car
                         | Car rental
-                li.navigation__item
-                    a.navigation__link(ahref="#")
+                li.sidebar__item
+                    a.sidebar__link(ahref="#")
                         i.fa.fa-map
                         | Tours
-            p © 2017 by trillo. All rights reserved.
-        section.content
-            .content__image
+            //- p © 2017 by trillo. All rights reserved.
+        section.hotels
+            .hotels__image
                 img(src="../../images/hotel-1.jpg", alt="")
                 img(src="../../images/hotel-2.jpg", alt="")
                 img(src="../../images/hotel-3.jpg", alt="")
-            .content__rate
-                .content__star
-                    .content__star--titles
+            .hotels__rate
+                .hotels__star
+                    .hotels__star--titles
                         | HOTEL LAS PALMAS
-                    .content__star--icon
+                    .hotels__star--icon
                         i.fa.fa-star
                         i.fa.fa-star
                         i.fa.fa-star
                         i.fa.fa-star
                         i.fa.fa-star
-                .content__vote
-                    .content__show
+                .hotels__vote
+                    .hotels__show
                         i.fa.fa-map-marker
                         a(href="#") Albufeira, Portugal
-                    .content__vote--score
-                        .content__vote-point
+                    .hotels__vote--score
+                        .hotels__vote-point
                             | 8.6
-                        .content__vote--users
+                        .hotels__vote--users
                             | 429 votes
-            .content__review
-                .content__left
-                    .content__intro
+            .hotels__review
+                .hotels__left
+                    .hotels__intro
                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.
                         p Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure aliquid aliquam.
-                    .content__topic
+                    .hotels__topic
                         ul
                             li
                                 i.fa.fa-angle-right
@@ -94,49 +94,45 @@ main#main-content
                             li
                                 i.fa.fa-angle-right
                                 | Perfect for families
-                    .content__recommend
-                        .content__recommend--text Lucy and 3 other friends recommend this hotel.
-                        .content__recommend--image
+                    .hotels__recommend
+                        .hotels__recommend--text Lucy and 3 other friends recommend this hotel.
+                        .hotels__recommend--image
                             img(src="../../images/user-3.jpg", alt="")
                             img(src="../../images/user-4.jpg", alt="")
                             img(src="../../images/user-5.jpg", alt="")
                             img(src="../../images/user-6.jpg", alt="")
-                .content__right
-                    .content__quote
+                .hotels__right
+                    .hotels__quote
                         i.fa.fa-quote-left
-                        .content__quote__content
+                        .hotels__quote__content
                             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.
-                        .content__quote__author
-                            .content__quote__box
+                        .hotels__quote__author
+                            .hotels__quote__box
                                 img(src="../../images/user-1.jpg", alt="")
-                                .content__quote__title
-                                    .content__quote__name
+                                .hotels__quote__title
+                                    .hotels__quote__name
                                         | Nick smith
-                                    .content__quote__date
+                                    .hotels__quote__date
                                         | Feb 23rd, 2017
-                            .content__quote__score
+                            .hotels__quote__score
                                 | 7.8
-                    .content__quote
+                    .hotels__quote
                         i.fa.fa-quote-left
-                        .content__quote__content
+                        .hotels__quote__content
                             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi
-                        .content__quote__author
-                            .content__quote__box
+                        .hotels__quote__author
+                            .hotels__quote__box
                                 img(src="../../images/user-2.jpg", alt="")
-                                .content__quote__title
-                                    .content__quote__name
+                                .hotels__quote__title
+                                    .hotels__quote__name
                                         | Nick smith
-                                    .content__quote__date
+                                    .hotels__quote__date
                                         | Feb 23rd, 2017
-                            .content__quote__score
-                                | 7.8
-                    .content__show
+                            .hotels__quote__score
+                                | 7.9
+                    .hotels__show
                         a(href="#") Show all
                             i.fa.fa-long-arrow-right
             section.bottom
                 p GOOD NEWS! WE HAVE 4 FREE ROOMS FOR YOUR SELECTED DATES!
                 a.bottom__button(href="#") Book now
-
-
-
-            
