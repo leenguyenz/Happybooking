@@ -1,10 +1,3 @@
-@mixin clear-fix {
-    &:after{
-        content: '';
-        display: table;
-        clear: both;
-    }
-}
 @mixin center-block{
     position: absolute;
     top: 50%;
@@ -12,7 +5,7 @@
     transform: translate(-50%,-50%);
 }
 
-@mixin notify_amount {
+@mixin notify_count {
     width: 15px;
     height: 15px;
     background: #eb2f64;

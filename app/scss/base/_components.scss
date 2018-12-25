@@ -2,7 +2,7 @@
 //logo brand
 .logo-brand{
     height: 3.5rem;
-    padding-left: 1rem;
+    padding-left: 3rem;
     img{
         height: 100%;
     }
@@ -11,6 +11,7 @@
 //search input
 .search{
     position: relative;
+    flex: 0 0 40%;
     button{
         position: absolute;
         top: 50%;
@@ -26,32 +27,23 @@
 }
 ///////////////////////////////////
 //notification push
-.notify{
-    ul{
-        list-style: none;
-        li{
-            padding: 2.5rem 1.5rem;
-            display: inline-block;
-            position: relative;
-            cursor: pointer;
-            &.notify__bookmark:after{
-                @include notify_amount;
-                content: '7';
-            }
-            &.notify__chat:after{
-                @include notify_amount;
-                content: '10';
-            }
-            & > i {
-                font-size: 2.2rem;
-            }
-            &:hover{
-                background: $color-grey-light-4;
-            }
-        }
+.user{
+    & > *{
+        padding: 2.5rem 1.5rem;
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+    }
+    &__bookmark:after{
+        @include notify_count;
+        content: '7';
+    }
+    &__chat:after{
+        @include notify_count;
+        content: '10';
     }
     &__avatar{
-        &__block{
+        &-name{
             position: relative;
             padding-left: 4.5rem;
             img{
@@ -63,6 +55,10 @@
             }
         }
     }
+    & > i {
+        font-size: 2.2rem;
+    }
+    &:hover{
+        background: $color-grey-light-4;
+    }
 }
-///////////////////////////////////
-//avatar user

@@ -6,18 +6,17 @@ main.container
         .search
             form(action="" method="")
                 input(type="text" class="form-control" placeholder="Search hotels...")
-                button(type="submit")
+                button(type="submit" class="search__button")
                     i.fa.fa-search
-        .notify
-            ul
-                li.notify__bookmark
-                    i.fa.fa-bookmark
-                li.notify__chat
-                    i.fa.fa-comments
-                li.notify__avatar
-                    .notify__avatar__block
-                        img(src="../../images/user.jpg", alt="Lee")
-                        | Jonas
+        .user
+            .user__bookmark
+                i.fa.fa-bookmark
+            .user__chat
+                i.fa.fa-comments
+            .user__avatar
+                .user__avatar-name
+                    img(src="../../images/user-3.jpg", alt="Lee")
+                    | Lee
     .content
         aside.sidebar
             ul.sidebar__nav
