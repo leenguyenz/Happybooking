@@ -6,10 +6,9 @@
 }
 
 @mixin notify_count {
-    width: 15px;
-    height: 15px;
+    width: 1.5rem;
+    height: 1.5rem;
     background: #eb2f64;
-    -webkit-border-radius: 50%;
     border-radius: 50%;
     position: absolute;
     top: 2rem;

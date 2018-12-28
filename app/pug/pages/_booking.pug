@@ -36,31 +36,32 @@ main.container
                     a.sidebar__link(ahref="#")
                         i.fa.fa-map
                         | Tours
-            //- p © 2017 by trillo. All rights reserved.
+            p © 2019 by Leenguyenz. All rights reserved.
         section.hotels
-            .hotels__image
-                img(src="../../images/hotel-1.jpg", alt="")
-                img(src="../../images/hotel-2.jpg", alt="")
-                img(src="../../images/hotel-3.jpg", alt="")
-            .hotels__rate
-                .hotels__star
-                    .hotels__star--titles
-                        | HOTEL LAS PALMAS
-                    .hotels__star--icon
-                        i.fa.fa-star
-                        i.fa.fa-star
-                        i.fa.fa-star
-                        i.fa.fa-star
-                        i.fa.fa-star
-                .hotels__vote
-                    .hotels__show
-                        i.fa.fa-map-marker
-                        a(href="#") Albufeira, Portugal
-                    .hotels__vote--score
-                        .hotels__vote-point
-                            | 8.6
-                        .hotels__vote--users
-                            | 429 votes
+            .gallery
+                figure.gallery__item
+                    img(src="../../images/hotel-1.jpg", alt="")
+                figure.gallery__item
+                    img(src="../../images/hotel-2.jpg", alt="")
+                figure.gallery__item
+                    img(src="../../images/hotel-3.jpg", alt="")
+            .rate
+                h1.rate__title
+                    | HOTEL LAS PALMAS
+                .rate__icon
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                .rate__location
+                    i.fa.fa-map-marker
+                    a(href="javascript:void(0)").btn__booking Albufeira, Portugal
+                .rate__vote
+                    .rate__point
+                        | 8.6
+                    .rate__users
+                        | 429 votes
             .hotels__review
                 .hotels__left
                     .hotels__intro
