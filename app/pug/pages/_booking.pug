@@ -81,7 +81,6 @@ main.container
                             li
                                 i.fa.fa-angle-right
                                 | We speak all languages
-                        ul
                             li
                                 i.fa.fa-angle-right
                                 | Breakfast included
@@ -102,37 +101,37 @@ main.container
                             img(src="../../images/user-5.jpg", alt="")
                             img(src="../../images/user-6.jpg", alt="")
                 .hotels__right
-                    .hotels__quote
-                        i.fa.fa-quote-left
-                        .hotels__quote__content
+                    .quote
+                        blockquote.quote__content
                             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.
-                        .hotels__quote__author
-                            .hotels__quote__box
+                        figure.quote__author
+                            figcaption.quote__box
                                 img(src="../../images/user-1.jpg", alt="")
-                                .hotels__quote__title
-                                    .hotels__quote__name
-                                        | Nick smith
-                                    .hotels__quote__date
+                                .quote__title
+                                    .quote__name
+                                        | Lee Nguyen
+                                    .quote__date
                                         | Feb 23rd, 2017
-                            .hotels__quote__score
+                            .quote__score
                                 | 7.8
-                    .hotels__quote
-                        i.fa.fa-quote-left
-                        .hotels__quote__content
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi
-                        .hotels__quote__author
-                            .hotels__quote__box
-                                img(src="../../images/user-2.jpg", alt="")
-                                .hotels__quote__title
-                                    .hotels__quote__name
+                    .quote
+                        .quote__content
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.
+                        .quote__author
+                            .quote__box
+                                img(src="../../images/user-3.jpg", alt="")
+                                .quote__title
+                                    .quote__name
                                         | Nick smith
-                                    .hotels__quote__date
+                                    .quote__date
                                         | Feb 23rd, 2017
-                            .hotels__quote__score
+                            .quote__score
                                 | 7.9
-                    .hotels__show
-                        a(href="#") Show all
-                            i.fa.fa-long-arrow-right
+                    .btn__booking
+                        a(href="javascript:void(0)") Show all
+                            span &rarr; 
             section.bottom
                 p GOOD NEWS! WE HAVE 4 FREE ROOMS FOR YOUR SELECTED DATES!
-                a.bottom__button(href="#") Book now
+                a(href="javascript:void(0)").btn
+                    span.btn__info Only 4 rooms left
+                    span.btn__book Book now
