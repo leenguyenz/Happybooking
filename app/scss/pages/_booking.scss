@@ -5,9 +5,16 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+    @include respond($tab-port){
+        padding-top: 0;
+    }
     &__nav{
         list-style: none;
         width: 100%;
+        @include respond($tab-port){
+            display: flex;
+            flex-flow: row nowrap;
+        }
     }
     &__item{
         color: $color-grey-light-1;
@@ -16,10 +23,26 @@
         transition: all 300ms ease;
         cursor: pointer;
         position: relative;
+        @include respond($tab-port){
+            margin-bottom: 0!important;
+            padding: 15px 40px;
+            flex: 0 0 25%;
+        }
         a{
             position: relative;
             z-index: 2;
+            @include respond($tab-port){
+                text-align: center;
+                display: block;
+            }
         }
+        span{
+            @include respond($tab-port){
+                display: block;
+                white-space: nowrap;
+            }
+        }
+
         &:not(:last-child){
             margin-bottom: 1rem;
         }
@@ -45,14 +68,19 @@
         i{
             margin-right: 2rem;
             font-size: 1.7rem;
+            @include respond($tab-port){
+                margin-right: 0;
+            }
         }
-
     }
     p{
         padding: 40px 20px;
         text-align: center;
         font-size: 1.2rem;
         color: $color-white;
+        @include respond($tab-port){
+            display: none;
+        }
     }
 }
 
@@ -72,6 +100,17 @@
         display: flex;
         background: $color-white;
         align-items: center;
+        flex-flow: row wrap;
+        justify-content: center;
+        @include respond($phone){
+            h1{
+                font-size: 1.8rem;
+                padding: 1.25rem 2rem;
+            }
+            & > * {
+                white-space: nowrap;
+            }
+        }
         &__title{
             font-size: 2.3rem;
             font-weight: 300;
@@ -82,6 +121,9 @@
         &__icon{
             color: $color-primary;
             flex: 1;
+            @include respond($phone){
+                flex: 0;
+            }
         }
 
         &__location{
@@ -111,12 +153,20 @@
     &__review{
         padding: 4.5rem;
         display: flex;
+        @include respond($phone){
+            display: flex;
+            flex-flow: column nowrap;
+        }
     }
     &__left{
         flex: 0 0 60%;
         background: $color-white;
         margin-right: 4rem;
         padding: 3rem;
+        @include respond($phone){
+            margin-right: 0;
+            margin-bottom: 4.5rem;
+        }
     }
     &__right{
         flex: 1;
@@ -215,24 +265,28 @@
         }
         .btn{
             display: inline-block;
-            padding: 12px 50px;
+            padding: 25px 100px;
             background-image: linear-gradient(to right,$color-primary-light,$color-primary-dark);
             color:$color-white;
             border-radius: 999px;
-            font-size: 2rem;
+            font-size: 1.65rem;
             transition: all 300ms ease;
             position: relative;
             overflow: hidden;
-            &__info{
+            @include respond($tab-land){
+                padding: 20px 75px;
+            }
+            & > * {
                 position: absolute;
                 left: 50%;
-                top:-100%;
                 transform: translateX(-50%);
+                transition: all 300ms ease;
+            }
+            &__info{
+                top:-100%;
                 white-space: nowrap;
             }
-            &__booking{
-                position: absolute;
-                left: 50%;
+            &__book{
                 top:20%;
             }
             &:hover{
@@ -243,6 +297,11 @@
                 .btn__book{
                     top:100%;
                 }
+                transition: all 500ms ease;
+            }
+            &:focus{
+                outline: none;
+                animation: pulse 700ms infinite;
             }
         }
     }

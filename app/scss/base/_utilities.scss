@@ -36,21 +36,6 @@
     padding-top: 5rem!important;
 }
 
-//form control
-.form-control{
-    display: block;
-    width: 500px;
-    height: 3.5rem;
-    padding: .5rem 1rem;
-    border: none;
-    background: $color-grey-light-2;
-    border-radius: 999px;
-    transition:300ms ease;
-    &:focus{
-        outline: none;
-        width: 550px;
-    }
-    &::placeholder{
-        color: $color-grey-light-4;
-    }
+.border-0{
+    border: 0;
 }
